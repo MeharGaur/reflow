@@ -1,0 +1,25 @@
+{
+  "name": "@draqo/reflow",
+  "version": "1.0.0",
+  "description": "reflow is a JS and SCSS responsive breakpoint library that makes it easy to build UI that flows across any device   🥊  ✨ ",
+  "main": "main.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeharGaur/reflow.git"
+  },
+  "keywords": [
+    "responsive",
+    "breakpoints",
+    "mobile",
+    "material"
+  ],
+  "author": "Mehar Gaur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeharGaur/reflow/issues"
+  },
+  "homepage": "https://github.com/MeharGaur/reflow#readme"
+}
