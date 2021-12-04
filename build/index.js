@@ -59,7 +59,6 @@ var reflow = (() => {
             newBreakpoint.xl = true;
         }
         reflow = newBreakpoint;
-        console.log(reflow);
         return newBreakpoint;
     }
 })();

@@ -92,8 +92,6 @@ var reflow: Breakpoint = (() => {
 
         reflow = newBreakpoint
 
-        console.log(reflow)
-
         return newBreakpoint
     }
 
