@@ -52,11 +52,11 @@ Now, time for the easy part.
 |-------------|------|---------------------------|--------------------|
 | Extra small | xd   | Small to large phone      | < 600px            |
 | Small       | sm   | Small to medium tablet    | 600px > < 960px    |
-| Medium      | md   | Large tablet to laptop    | 960px > < 1264px*  |
-| Large       | lg   | Desktops and most laptops | 1264px > < 1904px* |
-| Extra large | xl   | 4k and ultra-wide         | > 1904px*          |
+| Medium      | md   | Large tablet to laptop    | 960px > < 1280px  |
+| Large       | lg   | Desktops and most laptops | 1280px > < 1920px |
+| Extra large | xl   | 4k and ultra-wide         | > 1920px          |
 
-> \* -16px on desktop to account for browser scrollbar
+<!-- > \* -16px on desktop to account for browser scrollbar -->
 
 --------------------
 
