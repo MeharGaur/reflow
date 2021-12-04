@@ -5,6 +5,7 @@
   "main": "build/index.js",
   "type": "module",
   "scripts": {
+      "dev": "npx watch 'npm run build' ./src &",
       "build": "rm -rf build && rm -rf ./test/build 2>/dev/null || : && tsc && cp -r ./build/. ./test/build",
       "test": "npm run build && npx serve test"
   },
