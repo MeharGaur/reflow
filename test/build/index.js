@@ -2,9 +2,9 @@
  * Can access 'reflow' or 'window.reflow' from anywhere.
  * IIFE for initialization and to avoid polluting global scope.
  *
- * TODO: make breakpoint thresholds configurable, but after initialization.
+ * TODO: make breakpoint thresholds configurable, but only after initialization.
  */
-var reflow = (() => {
+window.reflow = (() => {
     const breakpointInitial = {
         current: 'xs',
         xs: false,
@@ -58,8 +58,9 @@ var reflow = (() => {
             newBreakpoint.current = 'xl';
             newBreakpoint.xl = true;
         }
-        reflow = newBreakpoint;
+        window.reflow = newBreakpoint;
         return newBreakpoint;
     }
 })();
+export {};
 //# sourceMappingURL=index.js.map

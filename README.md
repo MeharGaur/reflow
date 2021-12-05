@@ -15,11 +15,11 @@ You can install reflow on the JS side or SCSS side. You might want one or both d
 On the JS side of things, you can install via `npm` or just add a script tag.
 
 **With a bundler:**  
-`npm install reflow-lib`  
+`npm install reflow-breakpoints`  
 
 And then import it at some root-level file in your project. Make sure this file runs in the browser and not in node.  
 ```js
-import 'reflow-lib'
+import 'reflow-breakpoints'
 ```
 
 For example, in a Vue project you could import reflow in the `main.js` file.
@@ -34,8 +34,8 @@ Using reflow in SCSS requires that the `_variables.scss` and `_mixins.scss` file
 
 ```scss
 // In webpack you might need to prepend a ~ (tilde) to indicate reflow is a module
-@import 'reflow-lib/scss/variables';
-@import 'reflow-lib/scss/mixins';
+@import 'reflow-breakpoints/scss/variables';
+@import 'reflow-breakpoints/scss/mixins';
 ```  
 
 Depending on your project, you might be able to do these imports globally, or might need to prepend these imports to every file. If you are using SvelteKit for example, you can prepend the above snippet into every `<style lang="scss">` block automatically using [svelte-preprocess](https://github.com/sveltejs/svelte-preprocess).  
@@ -83,8 +83,8 @@ reflow.
 
 ```scss
 
-@import './variables';
-@import './mixins';
+@import 'reflow-breakpoints/scss/variables';
+@import 'reflow-breakpoints/scss/mixins';
 
 .my-div-element {
     /* Base styles go here */

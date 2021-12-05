@@ -1,3 +1,11 @@
+export { }
+
+// Add reflow property to window
+declare global {
+    interface Window {
+        reflow: Breakpoint
+    }
+}
 
 interface Breakpoint {
     current: string
@@ -23,9 +31,9 @@ interface Breakpoint {
  * Can access 'reflow' or 'window.reflow' from anywhere.  
  * IIFE for initialization and to avoid polluting global scope.
  * 
- * TODO: make breakpoint thresholds configurable, but after initialization.
+ * TODO: make breakpoint thresholds configurable, but only after initialization.
  */
-var reflow: Breakpoint = (() => {
+window.reflow = (() => {
 
     const breakpointInitial: Breakpoint = {
         current: 'xs',
@@ -90,7 +98,7 @@ var reflow: Breakpoint = (() => {
             newBreakpoint.xl = true
         }
 
-        reflow = newBreakpoint
+        window.reflow = newBreakpoint
 
         return newBreakpoint
     }
