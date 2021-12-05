@@ -1,13 +1,13 @@
 {
   "name": "reflow-breakpoints",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "reflow is a JS and SCSS responsive breakpoint library that makes it easy to build UI that flows across any device   🥊  ✨ ",
   "main": "build/index.js",
   "type": "module",
   "scripts": {
-      "dev": "npx watch 'npm run build' ./src",
-      "build": "rm -rf build && rm -rf ./test/build 2>/dev/null || : && tsc && cp -r ./build/. ./test/build",
-      "test": "npm run build && npx serve test"
+    "dev": "npx watch 'npm run build' ./src",
+    "build": "rm -rf build && rm -rf ./test/build 2>/dev/null || : && tsc && cp -r ./build/. ./test/build",
+    "test": "npm run build && npx serve test"
   },
   "repository": {
     "type": "git",
