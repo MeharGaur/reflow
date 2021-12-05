@@ -50,11 +50,11 @@ Now, time for the easy part.
 ### **Breakpoint Thresholds**
 | Device      | Code | Type                      | Range              |
 |-------------|------|---------------------------|--------------------|
-| Extra small | xd   | Small to large phone      | < 600px            |
-| Small       | sm   | Small to medium tablet    | 600px > < 960px    |
-| Medium      | md   | Large tablet to laptop    | 960px > < 1280px  |
-| Large       | lg   | Desktops and most laptops | 1280px > < 1920px |
-| Extra large | xl   | 4k and ultra-wide         | > 1920px          |
+| Extra small | **xs**   | Small to large phone      | < 600px            |
+| Small       | **sm**   | Small to medium tablet    | 600px > < 960px    |
+| Medium      | **md**   | Large tablet to laptop    | 960px > < 1280px  |
+| Large       | **lg**   | Desktops and most laptops | 1280px > < 1920px |
+| Extra large | **xl**   | 4k and ultra-wide         | > 1920px          |
 
 <!-- > \* -16px on desktop to account for browser scrollbar -->
 
