@@ -73,8 +73,20 @@ globalThis.reflow
 You get to import once, and use everywhere. Normally you'd want code-splitting to use a module only where necesarry, but again responsive breakpoints *will* be used throughout your entire app so the global var will come in handy.
 
 ```js
-// TODO: Refer to offten codebase and put some JS examples
-reflow.
+// TODO: Add more JS examples, especially for reacting to resizes
+
+
+// If mobile set width to 100px else 200px.
+myElement.style.width = `${ reflow.mobile ? 100 : 200 }px`
+
+
+// If tablet, else if desktop.
+if (reflow.md) {
+    // Code for 'md' width screens
+}
+else if (reflow.lg) {
+    // Code for 'lg' width screens
+}
 ```
 
 --------------------

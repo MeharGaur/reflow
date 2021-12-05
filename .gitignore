@@ -4,4 +4,4 @@
 
 *.tsbuildinfo
 
-/.testing
+/.test-svelte-kit
